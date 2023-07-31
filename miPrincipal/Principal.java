@@ -18,8 +18,8 @@ public class Principal {
         System.out.print("Introduce la altura:");
         h = consola.nextInt();
 
-        System.out.println("El área de un cuadrado con un lado de " + b + "es " + a.Cuadrado( b ));
-        System.out.println("El área de un cuadrado con un lado de " + h + "es " + a.Cuadrado( h ));
+        System.out.println("El área de un cuadrado con un lado de " + b + " es- " + a.Cuadrado( b ));
+        System.out.println("El área de un cuadrado con un lado de " + h + " es- " + a.Cuadrado( h ));
         
         System.out.println("El área de un rectángulo con base de " + b + " y altura de " + h +  " es " + a.Rectangulo( b,h ));
         System.out.println("El área de un triángulo con base de " + b + " y altura de " + h +  " es " + a.Triangulo( b,h ));
