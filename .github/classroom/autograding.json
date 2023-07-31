@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "make compile",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-class miTest.AppTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testCuadrado",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testRectangulo",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test 3",
+      "setup": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testTriangulo",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testRomboide",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test 6",
+      "setup": "make compile",
+      "run": "make run",
+      "input": "4\r\n6",
+      "output": "Calculo áreas\r\n======================\r\nIntroduce el primer operando:Introduce el segundo operando:\r\n4*4=16\r\n6*6=36\r\n4*6=24\r\n4*6=12\r\n4*6=24",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
